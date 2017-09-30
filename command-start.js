@@ -47,13 +47,15 @@ exports.handler = async (argv) => {
       const daemon = await server(argv)
 
       daemon.on('error', (err) => {
-	console.error('cannot start proxy')
+	console.error('Cannot start proxy.')
 	console.error(err)
 	process.exit(1)
       })
 
       daemon.on('listening', () => {
-	console.log('proxy succesfully started')
+	console.log('Proxy succesfully started.')
+	console.log('You may configure your ' +
+		    'shell by running the `' + argv['$0'] + ' env` command.')
       })
     } else {
       const daemon = fork('./daemon', {
@@ -64,17 +66,19 @@ exports.handler = async (argv) => {
       daemon.send(argv)
       daemon.on('message', (err) => {
 	if (err) {
-	  console.error('cannot start proxy')
+	  console.error('Cannot start proxy.')
 	  console.error(err)
 	  process.exit(1)
 	} else {
-	  console.log('proxy succesfully started')
+	  console.log('Proxy succesfully started.')
+	  console.log('You may configure your ' +
+		      'shell by running the `' + argv['$0'] + ' env` command.')
 	  process.exit(0)
 	}
       })
     }
   } catch (err) {
-    console.error('cannot start proxy')
+    console.error('Cannot start proxy.')
     console.error(err)
   }
   

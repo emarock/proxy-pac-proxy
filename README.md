@@ -51,17 +51,16 @@ Start the forwarding proxy server with authentication:
 $ proxy-pac-proxy start -A
 Username: joedoe
 Password for joedoe: [hidden]
-proxy succesfully started
-
+Proxy succesfully started.
+You may configure your shell by running the `bin/proxy-pac-proxy.js env` command.
 ```
 
 From this point on, on any shell it will be possible to automatically
 configure all the appropriate *_PROXY environment variables for
-steering traffic through the new forwarding proxy (note the command is
-run inside `$(...)`):
+steering traffic through the new forwarding proxy:
 
 ```
-$ $(proxy-pac-proxy env)
+$ eval $(proxy-pac-proxy env)
 ```
 
 Test:

@@ -19,6 +19,8 @@ exports.handler = async (argv) => {
     if (argv.reset) {
       console.log('unset HTTP_PROXY HTTPS_PROXY NO_PROXY')
       console.log('unset http_proxy https_proxy no_proxy')
+      console.log('# Run this command to configure your shell:')
+      console.log('# eval $(' + argv['$0'] + ' env -r)')	
     } else {
       const url = `http://${argv.address}:${argv.port}/status`
       request({
@@ -26,11 +28,11 @@ exports.handler = async (argv) => {
 	json: true
       }, (err, res, body) => {
 	if (err) {
-	  console.error('proxy is not running')
+	  console.error('Proxy is not running')
 	  console.error(err)
 	  process.exit(1)
 	} else if (Math.floor(res.statusCode / 100) != 2) {
-	  console.error('proxy is not running')
+	  console.error('Proxy is not running')
 	  console.error(res.statusMessage)
 	  process.exit(1)
 	}
@@ -42,10 +44,12 @@ exports.handler = async (argv) => {
 	console.log(`export http_proxy=${proxy}`)
 	console.log(`export https_proxy=${proxy}`)
 	console.log(`export no_proxy=${noproxy}`)
+	console.log('# Run this command to configure your shell:')
+	console.log('# eval $(' + argv['$0'] + ' env)')	
       })
     }
   } catch (err) {
-    console.error('proxy is not running')
+    console.error('Proxy is not running')
     console.error(err)
   }
 }

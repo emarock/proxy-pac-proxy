@@ -70,7 +70,7 @@ module.exports = () => {
 
   yargs.command('*', false, () => {
     yargs.showHelp();
-    console.error("Non-existing or no command specified");
+    console.error("Non-existing or no command specified.");
     process.exit(1);
   })
   yargs.demandCommand(1)
