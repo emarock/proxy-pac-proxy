@@ -1,6 +1,6 @@
 # proxy-pac-proxy
 
-<img src="https://user-images.githubusercontent.com/13051155/31047716-0abd2b22-a610-11e7-9e77-9a95d56f812c.png" height="200" align="right">
+<img src="https://user-images.githubusercontent.com/13051155/31047761-b81f3b34-a610-11e7-849d-6ca9924c93a6.png" height="140" align="right">
 
 > Forwarding proxy with BASIC authentication and upstream proxy.pac
 > resolution support
