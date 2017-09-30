@@ -5,8 +5,8 @@ forced through dynamically configured HTTP proxies is a pain. The
 simple use of common package managers such as
 [npm](https://www.npmjs.com/),
 [pip](https://pypi.python.org/pypi/pip), [gem](https://rubygems.org/)
-or [docker](https://www.docker.com/), perhaps in combination with
-services and repositories on the local network, requires reverse
+or [docker](https://www.docker.com/) -- perhaps in combination with
+services and repositories on the local network -- requires reverse
 engineering of a *proxy.pac* file and the configuration of arbitrarily
 complicated combinations of the usual *_PROXY environment
 variables. Worse, if the proxy requires authentication, passwords will
@@ -18,6 +18,13 @@ quickly spread in environment variables and *.bash_history* files.
 ## Installation
 
 > Note: proxy-pac-proxy requires at least Node v7.6.0
+
+> Note2: installation requires access to the public npmjs.com
+> repository. This is straightforward when connected to a public
+> network, but may be tricky those network environments where
+> proxy-pac-proxy is needed. In the latter case, `npm` can be
+> instructed to access the Internet through a previously discovered
+> HTTP proxy with the `--https-proxy` option
 
 To install *proxy-pac-proxy* on your system run:
 
