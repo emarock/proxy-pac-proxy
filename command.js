@@ -77,6 +77,7 @@ module.exports = () => {
 
   yargs.help('h')
   yargs.alias('h', 'help')
+  yargs.alias('v', 'version')
   yargs.env(meta.name.replace(/-/g, '').toUpperCase())
 
   const argv = yargs.argv
