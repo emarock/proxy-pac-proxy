@@ -38,8 +38,8 @@ $ npm install -g proxy-pac-proxy
 ## Quick Start
 
 Export the *proxy.pac* URL (optional, but if the environment variable
-is not set, the URL will need to be provided as a command line
-argument):
+is not set, the URL will need to be provided on the command line with
+the `-u` option):
 
 ```
 $ export PROXYPACPROXY_URL=http://intranet.mycompany.com/proxy.pac
