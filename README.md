@@ -52,7 +52,7 @@ $ proxy-pac-proxy start -A
 Username: joedoe
 Password for joedoe: [hidden]
 Proxy succesfully started.
-You may configure your shell by running the `bin/proxy-pac-proxy.js env` command.
+You may configure your shell by running the `proxy-pac-proxy.js env` command.
 ```
 
 From this point on, on any shell it will be possible to automatically
