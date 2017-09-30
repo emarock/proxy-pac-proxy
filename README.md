@@ -115,10 +115,10 @@ admin...). One way to retrieve the URL is on the
 
  * Only slightly more secure than storing credentials in environment
    variables. With basic authentication Base64-encode passwords are
-   transmitted in cleartext
+   transmitted in clear
 
      * Do not use authentication unless you totally trust the local
-       network administrator; in that's not the case, then leave
+       network administrator; if that's not the case, then leave
        authentication unset (i.e. don't use `-A` or `-U` options) and
        rely on application-based authentication
 
