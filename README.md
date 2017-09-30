@@ -55,8 +55,10 @@ proxy succesfully started
 
 ```
 
-Automatically configure appropriate *_PROXY environment variables for
-steering traffic through the new forwarding proxy:
+From this point on, on any shell it will be possible to automatically
+configure all the appropriate *_PROXY environment variables for
+steering traffic through the new forwarding proxy (note the command is
+run inside `$(...)`):
 
 ```
 $ $(proxy-pac-proxy env)
