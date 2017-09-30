@@ -1,6 +1,6 @@
 {
   "name": "proxy-pac-proxy",
-  "version": "1.0.0-dev",
+  "version": "1.0.0",
   "description": "Local HTTP(S) forwarding proxy",
   "private": true,
   "bin": {
