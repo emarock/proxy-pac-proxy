@@ -1,6 +1,7 @@
 const meta = require('./package')
 const debug = require('debug')(meta.name + ':command-start')
 const { fork } = require('child_process')
+const path = require('path')
 const inquirer = require('inquirer')
 const server = require('./server')
 
@@ -58,7 +59,7 @@ exports.handler = async (argv) => {
 		    'shell by running the `' + argv['$0'] + ' env` command.')
       })
     } else {
-      const daemon = fork('./daemon', {
+      const daemon = fork(__dirname + path.sep + 'daemon', {
 	detached: true,
 	stdio: 'ignore'
       })
