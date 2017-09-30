@@ -9,9 +9,8 @@ or [docker](https://www.docker.com/), perhaps in combination with
 services and repositories on the local network, requires reverse
 engineering of a *proxy.pac* file and the configuration of arbitrarily
 complicated combinations of the usual *_PROXY environment
-variables. Worse, is the proxy requires authentication, passwords will
-be spread all around, in environment variables and *.bash_history*
-files.
+variables. Worse, if the proxy requires authentication, passwords will
+quickly spread in environment variables and *.bash_history* files.
 
 *Proxy-pac-proxy* tries to alleviate at least some of that pain.
 
@@ -85,7 +84,17 @@ $ curl -v http://example.com
 ```
 
 
-# Limitations
+## Retrieving the proxy.pac URL
+
+The *proxy.pac* URL can be configured in many ways, depending on the
+operating system and the configuration approach (autodiscovery, remote
+admin...). One way to retrieve the URL is on the
+*chrome://net-internals* tab in Chrome:
+
+![Chrome net-internals screenshot](https://user-images.githubusercontent.com/13051155/31044689-427be710-a5d4-11e7-99e5-329710079570.png)
+
+
+## Limitations
 
  * Only supports Basic Authentication
 
