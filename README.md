@@ -20,11 +20,13 @@ quickly spread in environment variables and *.bash_history* files.
 > Note: proxy-pac-proxy requires at least Node v7.6.0
 
 > Note2: installation requires access to the public npmjs.com
-> repository. This is straightforward when connected to a public
+> repository. That is straightforward when connected to a public
 > network, but may be tricky those network environments where
 > proxy-pac-proxy is needed. In the latter case, `npm` can be
 > instructed to access the Internet through a previously discovered
-> HTTP proxy with the `--https-proxy` option
+> HTTP proxy by using the `--https-proxy` option. This is needed only
+> at installation time; afterwards proxy-pac-proxy takes care of the
+> problem
 
 To install *proxy-pac-proxy* on your system run:
 
