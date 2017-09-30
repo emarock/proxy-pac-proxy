@@ -33,7 +33,7 @@ is not set, the URL will need to be provided as a command line
 argument):
 
 ```
-$ export PROXYPACPROXY_URL=http://my.company.com/proxy.pac
+$ export PROXYPACPROXY_URL=http://intranet.mycompany.com/proxy.pac
 ```
 
 Start the forwarding proxy server with authentication:
@@ -91,7 +91,7 @@ operating system and the configuration approach (autodiscovery, remote
 admin...). One way to retrieve the URL is on the
 *chrome://net-internals* tab in Chrome:
 
-![Chrome net-internals screenshot](https://user-images.githubusercontent.com/13051155/31044689-427be710-a5d4-11e7-99e5-329710079570.png)
+![Chrome net-internals screenshot](https://user-images.githubusercontent.com/13051155/31044770-b59dc0aa-a5d5-11e7-931c-0f0b0ceb3f8c.png)
 
 
 ## Limitations
