@@ -21,12 +21,12 @@ quickly spread in environment variables and *.bash_history* files.
 
 > Note2: installation requires access to the public npmjs.com
 > repository. That is straightforward when connected to a public
-> network, but may be tricky those network environments where
+> network, but may be tricky in those network environments where
 > *proxy-pac-proxy* is needed. In the latter case, `npm` can be
 > instructed to access the Internet through a previously discovered
 > HTTP proxy by using the `--https-proxy` option. This is needed only
-> at installation time; afterwards proxy-pac-proxy takes care of the
-> problem
+> at installation time; afterwards proxy-pac-proxy can take care of
+> the problem
 
 To install *proxy-pac-proxy* on your system run:
 
