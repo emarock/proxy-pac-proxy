@@ -1,8 +1,7 @@
 {
   "name": "proxy-pac-proxy",
-  "version": "1.0.0",
-  "description": "Local HTTP(S) forwarding proxy",
-  "private": true,
+  "version": "1.0.1",
+  "description": "Forwarding proxy with BASIC authentication and upstream proxy.pac resolution support",
   "bin": {
     "proxy-pac-proxy": "bin/proxy-pac-proxy.js"
   },
@@ -23,8 +22,14 @@
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "https://scm.code.telecomitalia.it/00918231/local-http-proxy"
+    "url": "https://github.com/emarock/proxy-pac-proxy.git"
   },
-  "author": "Enrico Marocco <enrico.marocco@telecomitalia.it>",
-  "license": "UNLICENSED"
+  "bugs": {
+    "url": "http://github.com/emarock/proxy-pac-proxy/issues"
+  },
+  "engines": {
+    "node": ">= 7.6"
+  },
+  "author": "Enrico Marocco <enrico.marocco@gmail.com>",
+  "license": "Apache-2.0"
 }
