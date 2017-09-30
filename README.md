@@ -114,7 +114,7 @@ admin...). One way to retrieve the URL is on the
  * Only supports Basic Authentication
 
  * Only slightly more secure than storing credentials in environment
-   variables. With basic authentication Base64-encode passwords are
+   variables. With basic authentication Base64-encoded passwords are
    transmitted in clear
 
      * Do not use authentication unless you totally trust the local
