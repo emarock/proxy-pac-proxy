@@ -2,7 +2,7 @@
 
 <img src="https://user-images.githubusercontent.com/13051155/31047761-b81f3b34-a610-11e7-849d-6ca9924c93a6.png" height="140" align="right">
 
-> Forwarding proxy with BASIC authentication and upstream proxy.pac
+> Forwarding proxy with BASIC authentication and upstream *proxy.pac*
 > resolution support
 
 Software development in network environments where Internet access is
@@ -99,7 +99,7 @@ $ curl -v http://example.com
 ```
 
 
-## Retrieving the proxy.pac URL
+## Retrieving the *proxy.pac* URL
 
 The *proxy.pac* URL can be configured in many ways, depending on the
 operating system and the configuration approach (autodiscovery, remote
@@ -122,3 +122,5 @@ admin...). One way to retrieve the URL is on the
        authentication unset (i.e. don't use `-A` or `-U` options) and
        rely on application-based authentication
 
+ * `env` only displays commands for bash. Commands for other shells
+   can be easily derived, but at this point it must be done manually
