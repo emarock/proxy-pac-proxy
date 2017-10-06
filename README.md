@@ -69,7 +69,7 @@ Proxy succesfully started.
 You may configure your shell by running the `proxy-pac-proxy env` command.
 ```
 
-From this point on, on any shell it will be possible to automatically
+From this point on, in any shell it will be possible to automatically
 configure all the appropriate *\*_PROXY* environment variables for
 steering traffic through the new forwarding proxy:
 
@@ -124,7 +124,7 @@ cross-platform way to retrieve the URL is on the
 ### proxy-pac-proxy start
 
 Start a local instance of a forwarding proxy that can be controlled
-through the *stop* and *env* commands
+through the *stop* and *env* commands.
 
 ```
 $ proxy-pac-proxy start --help
@@ -188,7 +188,7 @@ Options:
  * Only supports BASIC Authentication
 
  * Only slightly more secure than storing credentials in environment
-   variables. With basic authentication Base64-encoded passwords are
+   variables. With BASIC authentication Base64-encoded passwords are
    transmitted in clear
 
      * Do not use authentication unless you totally trust the local
@@ -196,5 +196,6 @@ Options:
        authentication unset (i.e. don't use `-A` or `-U` options) and
        rely on application-based authentication
 
- * `env` only displays commands for bash. Commands for other shells
-   can be easily derived, but at this point it must be done manually
+ * The `env` command only displays commands for bash. Commands for
+   other shells can be easily derived, but at this point it must be
+   done manually
