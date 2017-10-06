@@ -19,6 +19,21 @@ quickly spread across environment variables and *.bash_history* files.
 
 *Proxy-pac-proxy* tries to alleviate at least some of that pain.
 
+ * [Installation](#installation)
+
+ * [Quick Start](#quick-start)
+
+ * [Retrieving the proxy.pac URL](#retrieving-the-proxypac-url)
+
+ * [Usage](#usage)
+
+   * [proxy-pac-proxy start](#proxy-pac-proxy-start)
+
+   * [proxy-pac-proxy stop](#proxy-pac-proxy-stop)
+
+   * [proxy-pac-proxy env](#proxy-pac-proxy-env)
+
+ * [Limitations](#limitations)
 
 ## Installation
 
@@ -154,7 +169,7 @@ Options:
 ```
 
 
-### proxy-pac-env
+### proxy-pac-proxy env
 
 Display the commands to configure the shell environment.
 
