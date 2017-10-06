@@ -169,7 +169,7 @@ Options:
 Display the commands to configure the shell environment.
 
 ```
-$ proxy-pac-proxy env -h
+$ proxy-pac-proxy env --help
 proxy-pac-proxy env [options]
 
 Options:
