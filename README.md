@@ -110,9 +110,10 @@ $ curl -v http://example.com
 
 ## Retrieving the *proxy.pac* URL
 
-The *proxy.pac* URL can be configured in many ways, depending on the
-operating system and the configuration approach (autodiscovery, remote
-admin...). One way to retrieve the URL is on the
+The *proxy.pac* URL is often configured automatically, in ways that
+depend on the operating system and the IT/network administration
+policies (e.g. autodiscovery, remote admin...). One simple
+cross-platform way to retrieve the URL is on the
 *chrome://net-internals* tab in Chrome:
 
 ![Chrome net-internals screenshot](https://user-images.githubusercontent.com/13051155/31044770-b59dc0aa-a5d5-11e7-931c-0f0b0ceb3f8c.png)
