@@ -15,7 +15,7 @@ services and repositories on the local network -- requires reverse
 engineering of a *proxy.pac* file and the configuration of arbitrarily
 complicated combinations of the usual *\*_PROXY* environment
 variables. Worse, if the proxy requires authentication, passwords will
-quickly spread across environment variables and *\*_history* files and
+quickly spread across environment variables, *\*_history* files and
 whatnot.
 
 *Proxy-pac-proxy* tries to alleviate at least some of that pain.
