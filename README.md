@@ -2,8 +2,8 @@
 
 <img src="https://user-images.githubusercontent.com/13051155/31047761-b81f3b34-a610-11e7-849d-6ca9924c93a6.png" height="140" align="right">
 
-> Forwarding proxy with BASIC authentication and upstream *proxy.pac*
-> resolution support
+> Forwarding proxy with support for upstream *proxy.pac* resolution
+> and BASIC authentication
 
 Software development in network environments where Internet access is
 forced through dynamically configured HTTP proxies is a pain. The
@@ -13,9 +13,10 @@ simple use of common package managers such as
 or [docker](https://www.docker.com/) -- perhaps in combination with
 services and repositories on the local network -- requires reverse
 engineering of a *proxy.pac* file and the configuration of arbitrarily
-complicated combinations of the usual *_PROXY environment
+complicated combinations of the usual *\*_PROXY* environment
 variables. Worse, if the proxy requires authentication, passwords will
-quickly spread across environment variables and *.bash_history* files.
+quickly spread across environment variables and *\*_history* files and
+whatnot.
 
 *Proxy-pac-proxy* tries to alleviate at least some of that pain.
 
@@ -69,7 +70,7 @@ You may configure your shell by running the `proxy-pac-proxy env` command.
 ```
 
 From this point on, on any shell it will be possible to automatically
-configure all the appropriate *_PROXY environment variables for
+configure all the appropriate *\*_PROXY* environment variables for
 steering traffic through the new forwarding proxy:
 
 ```
