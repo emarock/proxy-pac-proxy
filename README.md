@@ -109,6 +109,70 @@ admin...). One way to retrieve the URL is on the
 ![Chrome net-internals screenshot](https://user-images.githubusercontent.com/13051155/31044770-b59dc0aa-a5d5-11e7-931c-0f0b0ceb3f8c.png)
 
 
+## Usage
+
+### proxy-pac-proxy start
+
+Start a local instance of a forwarding proxy that can be controlled
+through the *stop* and *env* commands
+
+```
+$ proxy-pac-proxy start --help
+proxy-pac-proxy start [options]
+
+Options:
+  --url, -u               The proxy.pac URL                 [string] [required]
+  --address, -a           The local address the proxy will bind to
+                                                [string] [default: "127.0.0.1"]
+  --port, -p              The local port the proxy will bind to
+                                                       [number] [default: 8079]
+  --authenticate, -A      Prompt for username and password for proxy
+                          authentication             [boolean] [default: false]
+  --username, --user, -U  The username for proxy authentication        [string]
+  --password, --pass, -P  The password for proxy authentication        [string]
+  --foreground, -f        Run in foreground          [boolean] [default: false]
+  -h, --help              Show help                                   [boolean]
+  -v, --version           Show version number                         [boolean]
+```
+
+### proxy-pac-proxy stop
+
+Stop the local forwarding proxy instance.
+
+```
+$ proxy-pac-proxy stop --help
+proxy-pac-proxy stop [options]
+
+Options:
+
+  --address, -a           The local address the proxy is bound to
+                                                [string] [default: "127.0.0.1"]
+  --port, -p              The local port the proxy is bound to
+                                                       [number] [default: 8079]
+  -h, --help              Show help                                   [boolean]
+  -v, --version           Show version number                         [boolean]
+```
+
+
+### proxy-pac-env
+
+Display the commands to configure the shell environment.
+
+```
+$ proxy-pac-proxy env -h
+proxy-pac-proxy env [options]
+
+Options:
+  --address, -a           The local address the proxy is bound to
+                                                [string] [default: "127.0.0.1"]
+  --port, -p              The local port the proxy is bound to
+                                                       [number] [default: 8079]
+  --reset, -r             Display commands to reset the environment
+                                                     [boolean] [default: false]
+  -h, --help              Show help                                   [boolean]
+  -v, --version           Show version number                         [boolean]
+```
+
 ## Limitations
 
  * Only supports Basic Authentication
