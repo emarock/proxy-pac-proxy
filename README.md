@@ -39,7 +39,7 @@ whatnot.
 > *proxy-pac-proxy* is needed. In the latter case, `npm` can be
 > instructed to access the Internet through a previously discovered
 > HTTP proxy by using the `--https-proxy` option. This is needed only
-> at installation time; afterwards proxy-pac-proxy can take care of
+> at installation time; afterwards *proxy-pac-proxy* can take care of
 > the problem
 
 To install *proxy-pac-proxy* on your system run:
