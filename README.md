@@ -185,7 +185,7 @@ Options:
 
 ## Limitations
 
- * Only supports Basic Authentication
+ * Only supports BASIC Authentication
 
  * Only slightly more secure than storing credentials in environment
    variables. With basic authentication Base64-encoded passwords are
