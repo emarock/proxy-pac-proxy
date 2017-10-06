@@ -197,5 +197,5 @@ Options:
        rely on application-based authentication
 
  * The `env` command only displays commands for bash. Commands for
-   other shells can be easily derived, but at this point it must be
-   done manually
+   other shells can be easily derived, but at this point that's a job
+   that must be done manually
