@@ -1,6 +1,6 @@
 {
   "name": "proxy-pac-proxy",
-  "version": "1.0.0",
+  "version": "1.0.10-dev",
   "lockfileVersion": 1,
   "requires": true,
   "dependencies": {
