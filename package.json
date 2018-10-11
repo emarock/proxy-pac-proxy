@@ -14,15 +14,15 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "debug": "~3.0.0",
-    "lodash": "~4.17.4",
     "async": "~2.5.0",
-    "bluebird": "~3.5.0",
-    "request": "~2.81.0",
-    "pac-resolver": "~3.0.0",
+    "bluebird": "^3.5.2",
+    "debug": "^4.1.0",
+    "inquirer": "~3.3.0",
     "ip": "~1.1.5",
-    "yargs": "~9.0.1",
-    "inquirer": "~3.3.0"
+    "lodash": "^4.17.11",
+    "pac-resolver": "~3.0.0",
+    "request": "^2.88.0",
+    "yargs": "~9.0.1"
   },
   "devDependencies": {},
   "repository": {
