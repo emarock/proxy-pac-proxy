@@ -1,6 +1,6 @@
 {
   "name": "proxy-pac-proxy",
-  "version": "1.0.11-dev",
+  "version": "1.0.12",
   "description": "Forwarding proxy with support for upstream *proxy.pac* resolution and BASIC authentication",
   "keywords": [
     "proxy",
